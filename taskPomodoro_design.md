@@ -41,7 +41,7 @@
 **Session**
 - `Id`, `TaskId`, `Kind (Focus|Break)`, `PlannedMinutes`, `ActualMinutes`, `StartedAt`, `EndedAt?`
 
-**DailySummary（派生）**
+**DailySummary**
 - `Date`, `FocusPomos`, `FocusMinutes`, `BreakMinutes`（期間指定で動的集計）
 
 ---

@@ -4,13 +4,14 @@
 
 ## API（ASP.NET Core / MVC Controllers / EF Core + SQLite）
 
-- [ ] `global.json` で .NET SDK バージョンを固定
-- [ ] `AppDbContext` を作成（`DbSet<Task>`, `DbSet<Session>`）
+- [x] `global.json` で .NET SDK バージョンを固定
+- [x] `AppDbContext` を作成（`DbSet<Task>`, `DbSet<Session>`）
 - [ ] `appsettings.json` に接続文字列 `Data Source=app.db;Cache=Shared;` を追加
 - [ ] `appsettings.Development.json` で開発用設定（例: ログ/詳細エラー）
 - [ ] `Task` エンティティ定義（Title 必須/MaxLength 100、Note 任意、EstimatedPomos 任意、IsArchived、CreatedAt）
 - [ ] `Session` エンティティ定義（TaskId、Kind、PlannedMinutes、ActualMinutes、StartedAt、EndedAt）
 - [ ] `Task`-`Session` リレーション設定と外部キー制約
+- [ ] `DailySummary` は動的集計のため、エンティティではなく計算結果として実装
 - [ ] データ注釈/Fluent API で検証属性（Required/Range/MaxLength）
 - [ ] `IRepository<T>` 抽象（Add/Update/Remove/Find/Query）
 - [ ] `IUnitOfWork` 抽象（`Task<int> SaveChangesAsync()`）
@@ -39,6 +40,7 @@
 - [ ] `SessionsController` PATCH `/api/sessions/{id}/complete`（200 / 404 / 409）
 - [ ] `SessionsController` GET `/api/sessions?date=YYYY-MM-DD`（200: `Session[]`）
 - [ ] `SummaryController` GET `/api/summary?from&to`（200: 指定期間集計）
+- [ ] `DailySummary` 計算ロジック実装（Session から動的集計）
 - [ ] すべてのアクションに `[ProducesResponseType]`（200/201/400/404/409）を付与
 - [ ] ModelState 無効時 400（自動検証）の挙動確認
 
