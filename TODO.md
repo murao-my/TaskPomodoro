@@ -6,8 +6,8 @@
 
 - [x] `global.json` で .NET SDK バージョンを固定
 - [x] `AppDbContext` を作成（`DbSet<Task>`, `DbSet<Session>`）
-- [ ] `appsettings.json` に接続文字列 `Data Source=app.db;Cache=Shared;` を追加
-- [ ] `appsettings.Development.json` で開発用設定（例: ログ/詳細エラー）
+- [x] `appsettings.json` に接続文字列 `Data Source=app.db;Cache=Shared;` を追加
+- [x] `appsettings.Development.json` で開発用設定（例: ログ/詳細エラー）
 - [ ] `Task` エンティティ定義（Title 必須/MaxLength 100、Note 任意、EstimatedPomos 任意、IsArchived、CreatedAt）
 - [ ] `Session` エンティティ定義（TaskId、Kind、PlannedMinutes、ActualMinutes、StartedAt、EndedAt）
 - [ ] `Task`-`Session` リレーション設定と外部キー制約
