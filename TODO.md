@@ -9,8 +9,8 @@
 - [x] `appsettings.json` に接続文字列 `Data Source=app.db;Cache=Shared;` を追加
 - [x] `appsettings.Development.json` で開発用設定（例: ログ/詳細エラー）
 - [x] DI 登録（`DbContext`/Repository/UoW）
-- [ ] `Task` エンティティ定義（Title 必須/MaxLength 100、Note 任意、EstimatedPomos 任意、IsArchived、CreatedAt）
-- [ ] `Session` エンティティ定義（TaskId、Kind、PlannedMinutes、ActualMinutes、StartedAt、EndedAt）
+- [x] `Task` エンティティ定義（Title 必須/MaxLength 100、Note 任意、EstimatedPomos 任意、IsArchived、CreatedAt）
+- [x] `Session` エンティティ定義（TaskId、Kind、PlannedMinutes、ActualMinutes、StartedAt、EndedAt）
 - [ ] `Task`-`Session` リレーション設定と外部キー制約
 - [ ] `DailySummary` は動的集計のため、エンティティではなく計算結果として実装
 - [ ] データ注釈/Fluent API で検証属性（Required/Range/MaxLength）
