@@ -8,6 +8,7 @@
 - [x] `AppDbContext` を作成（`DbSet<Task>`, `DbSet<Session>`）
 - [x] `appsettings.json` に接続文字列 `Data Source=app.db;Cache=Shared;` を追加
 - [x] `appsettings.Development.json` で開発用設定（例: ログ/詳細エラー）
+- [x] DI 登録（`DbContext`/Repository/UoW）
 - [ ] `Task` エンティティ定義（Title 必須/MaxLength 100、Note 任意、EstimatedPomos 任意、IsArchived、CreatedAt）
 - [ ] `Session` エンティティ定義（TaskId、Kind、PlannedMinutes、ActualMinutes、StartedAt、EndedAt）
 - [ ] `Task`-`Session` リレーション設定と外部キー制約
@@ -17,7 +18,6 @@
 - [ ] `IUnitOfWork` 抽象（`Task<int> SaveChangesAsync()`）
 - [ ] `EfRepository<T>` 実装（基本 CRUD + `IQueryable` 返却）
 - [ ] `UnitOfWork` 実装（`DbContext` 内包）
-- [ ] DI 登録（`DbContext`/Repository/UoW）
 - [ ] 初回マイグレーション作成 `Init`
 - [ ] `dotnet ef database update` で DB 生成
 - [ ] ProblemDetails 応答の確認・整形（.NET 8 既定 + 必要な拡張）
