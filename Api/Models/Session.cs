@@ -10,38 +10,31 @@ public class Session
     /// <summary>
     /// セッションID（主キー）
     /// </summary>
-    [Key]
     public int Id { get; set; }
 
     /// <summary>
     /// 関連するタスクID（外部キー）
     /// </summary>
-    [Required(ErrorMessage = "TaskId is required")]
     public int TaskId { get; set; }
 
     /// <summary>
     /// セッションの種類（Focus/Break）
     /// </summary>
-    [Required(ErrorMessage = "Kind is required")]
     public SessionKind Kind { get; set; }
 
     /// <summary>
     /// 予定時間（分）
     /// </summary>
-    [Required(ErrorMessage = "PlannedMinutes is required")]
-    [Range(1, 120, ErrorMessage = "PlannedMinutes must be between 1 and 120")]
     public int PlannedMinutes { get; set; }
 
     /// <summary>
     /// 実際の時間（分）
     /// </summary>
-    [Range(0, 180, ErrorMessage = "ActualMinutes must be between 0 and 180")]
     public int? ActualMinutes { get; set; }
 
     /// <summary>
     /// 開始時刻
     /// </summary>
-    [Required(ErrorMessage = "StartedAt is required")]
     public DateTime StartedAt { get; set; }
 
     /// <summary>
