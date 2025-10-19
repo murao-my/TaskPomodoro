@@ -161,3 +161,4 @@
 /home/muraoo/rootbot/TaskPomodoro/api/obj/Debug/net8.0/api.pdb
 /home/muraoo/rootbot/TaskPomodoro/api/obj/Debug/net8.0/api.genruntimeconfig.cache
 /home/muraoo/rootbot/TaskPomodoro/api/obj/Debug/net8.0/ref/api.dll
+/home/muraoo/rootbot/TaskPomodoro/api/obj/Debug/net8.0/api.sourcelink.json

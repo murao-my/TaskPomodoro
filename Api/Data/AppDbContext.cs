@@ -1,7 +1,7 @@
-namespace TaskPomodoro.api.Data;
+namespace TaskPomodoro.Api.Data;
 
 using Microsoft.EntityFrameworkCore;
-using TaskPomodoro.api.Models;
+using TaskPomodoro.Api.Models;
 
 public class AppDbContext : DbContext
 {
@@ -39,7 +39,7 @@ public class AppDbContext : DbContext
         {
             entity.HasKey(e => e.Id);
             entity.Property(e => e.TaskId).IsRequired();
-            entity.Property(e => e => Kind).IsRequired().HasConversion<string>();
+            entity.Property(e => e.Kind).IsRequired().HasConversion<string>();
             entity.Property(e => e.PlannedMinutes).IsRequired();
             entity.Property(e => e.ActualMinutes).IsRequired(false);
             entity.Property(e => e.StartedAt).IsRequired();

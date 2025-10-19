@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-namespace TaskPomodoro.api.Models;
+namespace TaskPomodoro.Api.Models;
 
 public class Task
 {

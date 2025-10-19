@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vZdljQMl0eg0dwlnt3s3uS6QfM7FwV/sufB87uFX9Sjb+VAfrzlQ8HLlCae88VzkwhH/nYcY38w3Wzpz6GPoZw==",
+  "dgSpecHash": "SgyZpENCIlBMrRaxyQ8ViBjE0ZOBZqKP2XxcFNnqKKO9EYUQF3cjFasVGDvkc5zygGHfrMc7d12Az32j7lU+fw==",
   "success": true,
-  "projectFilePath": "/home/muraoo/rootbot/TaskPomodoro/api/api.csproj",
+  "projectFilePath": "/home/muraoo/rootbot/TaskPomodoro/Api/api.csproj",
   "expectedPackageFiles": [
     "/home/muraoo/.nuget/packages/asp.versioning.abstractions/8.1.0/asp.versioning.abstractions.8.1.0.nupkg.sha512",
     "/home/muraoo/.nuget/packages/asp.versioning.http/8.1.0/asp.versioning.http.8.1.0.nupkg.sha512",

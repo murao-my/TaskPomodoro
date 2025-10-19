@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using TaskPomodoro.Api.Data;
+using TaskPomodoro.Api.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

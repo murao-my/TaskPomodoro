@@ -3600,11 +3600,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/muraoo/rootbot/TaskPomodoro/api/api.csproj",
+      "projectUniqueName": "/home/muraoo/rootbot/TaskPomodoro/Api/api.csproj",
       "projectName": "api",
-      "projectPath": "/home/muraoo/rootbot/TaskPomodoro/api/api.csproj",
+      "projectPath": "/home/muraoo/rootbot/TaskPomodoro/Api/api.csproj",
       "packagesPath": "/home/muraoo/.nuget/packages/",
-      "outputPath": "/home/muraoo/rootbot/TaskPomodoro/api/obj/",
+      "outputPath": "/home/muraoo/rootbot/TaskPomodoro/Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/muraoo/.nuget/NuGet/NuGet.Config"

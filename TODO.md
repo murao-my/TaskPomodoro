@@ -11,13 +11,13 @@
 - [x] DI 登録（`DbContext`/Repository/UoW）
 - [x] `Task` エンティティ定義（Title 必須/MaxLength 100、Note 任意、EstimatedPomos 任意、IsArchived、CreatedAt）
 - [x] `Session` エンティティ定義（TaskId、Kind、PlannedMinutes、ActualMinutes、StartedAt、EndedAt）
-- [ ] `Task`-`Session` リレーション設定と外部キー制約
+- [x] `Task`-`Session` リレーション設定と外部キー制約
 - [ ] `DailySummary` は動的集計のため、エンティティではなく計算結果として実装
-- [ ] データ注釈/Fluent API で検証属性（Required/Range/MaxLength）
-- [ ] `IRepository<T>` 抽象（Add/Update/Remove/Find/Query）
-- [ ] `IUnitOfWork` 抽象（`Task<int> SaveChangesAsync()`）
+- [x] データ注釈/Fluent API で検証属性（Required/Range/MaxLength）
+- [x] `IRepository<T>` 抽象（Add/Update/Remove/Find/Query）
+- [x] `IUnitOfWork` 抽象（`Task<int> SaveChangesAsync()`）
 - [ ] `EfRepository<T>` 実装（基本 CRUD + `IQueryable` 返却）
-- [ ] `UnitOfWork` 実装（`DbContext` 内包）
+- [x] `UnitOfWork` 実装（`DbContext` 内包）
 - [ ] 初回マイグレーション作成 `Init`
 - [ ] `dotnet ef database update` で DB 生成
 - [ ] ProblemDetails 応答の確認・整形（.NET 8 既定 + 必要な拡張）
