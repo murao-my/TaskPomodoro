@@ -44,7 +44,12 @@ public class AppDbContext : DbContext
             entity.Property(e => e.ActualMinutes).IsRequired(false);
             entity.Property(e => e.StartedAt).IsRequired();
             entity.Property(e => e.EndedAt).IsRequired(false);
-            entity.HasOne<Task>().WithMany().HasForeignKey(e => e.TaskId).OnDelete(DeleteBehavior.Cascade);
+
+            // 外部キー関係の設定
+            entity.HasOne(s => s.Task)
+                .WithMany()
+                .HasForeignKey(s => s.TaskId)
+                .OnDelete(DeleteBehavior.Cascade);
         });
     }
 }

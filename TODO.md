@@ -16,10 +16,10 @@
 - [x] データ注釈/Fluent API で検証属性（Required/Range/MaxLength）
 - [x] `IRepository<T>` 抽象（Add/Update/Remove/Find/Query）
 - [x] `IUnitOfWork` 抽象（`Task<int> SaveChangesAsync()`）
-- [ ] `EfRepository<T>` 実装（基本 CRUD + `IQueryable` 返却）
+- [x]`EfRepository<T>` 実装（基本 CRUD + `IQueryable` 返却）
 - [x] `UnitOfWork` 実装（`DbContext` 内包）
-- [ ] 初回マイグレーション作成 `Init`
-- [ ] `dotnet ef database update` で DB 生成
+- [x] 初回マイグレーション作成 `Init`
+- [x] `dotnet ef database update` で DB 生成
 - [ ] ProblemDetails 応答の確認・整形（.NET 8 既定 + 必要な拡張）
 - [ ] 例外フィルタ作成（ドメイン例外→ProblemDetails 変換）
 - [ ] アクションフィルタ作成（監査: user/route/elapsed）

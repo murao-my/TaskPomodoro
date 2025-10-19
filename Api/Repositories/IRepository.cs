@@ -1,5 +1,5 @@
 using System.Linq.Expressions;
-using TaskPomodoro.Api.Models;
+using System.Threading.Tasks;
 
 namespace TaskPomodoro.Api.Repositories;
 
@@ -44,5 +44,5 @@ public interface IRepository<T> where T : class
     /// Get a queryable of all entities
     /// </summary>
     /// <returns>A queryable of all entities</returns>
-    IQueryable<T> QueryAll();
+    IQueryable<T> Query();
 }
