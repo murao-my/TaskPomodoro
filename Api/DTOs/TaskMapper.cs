@@ -1,4 +1,5 @@
 using TaskPomodoro.Api.Models;
+using Models = TaskPomodoro.Api.Models;
 
 namespace TaskPomodoro.Api.DTOs;
 
@@ -12,7 +13,7 @@ public static class TaskMapper
     /// </summary>
     /// <param name="task">Taskエンティティ</param>
     /// <returns>TaskResponseDto</returns>
-    public static TaskResponseDto ToResponseDto(Task task)
+    public static TaskResponseDto ToResponseDto(Models.Task task)
     {
         return new TaskResponseDto
         {
@@ -30,9 +31,9 @@ public static class TaskMapper
     /// </summary>
     /// <param name="createDto">TaskCreateDto</param>
     /// <returns>Taskエンティティ</returns>
-    public static Task FromCreateDto(TaskCreateDto createDto)
+    public static Models.Task FromCreateDto(TaskCreateDto createDto)
     {
-        return new Task
+        return new Models.Task
         {
             Title = createDto.Title,
             Note = createDto.Note,
@@ -48,7 +49,7 @@ public static class TaskMapper
     /// <param name="updateDto">TaskUpdateDto</param>
     /// <param name="existingTask">既存のTaskエンティティ</param>
     /// <returns>更新されたTaskエンティティ</returns>
-    public static Task FromUpdateDto(TaskUpdateDto updateDto, Task existingTask)
+    public static Models.Task FromUpdateDto(TaskUpdateDto updateDto, Models.Task existingTask)
     {
         existingTask.Title = updateDto.Title;
         existingTask.Note = updateDto.Note;
@@ -64,7 +65,7 @@ public static class TaskMapper
     /// </summary>
     /// <param name="tasks">Taskエンティティのコレクション</param>
     /// <returns>TaskResponseDtoのコレクション</returns>
-    public static IEnumerable<TaskResponseDto> ToResponseDtos(IEnumerable<Task> tasks)
+    public static IEnumerable<TaskResponseDto> ToResponseDtos(IEnumerable<Models.Task> tasks)
     {
         return tasks.Select(ToResponseDto);
     }

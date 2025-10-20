@@ -30,7 +30,7 @@
 
 ## DTO / Controllers（I/O 契約）
 
-- [ ] Task DTO 定義（Create/Update/Response）
+- [x] Task DTO 定義（Create/Update/Response）
 - [ ] Session DTO 定義（Create/Complete/Response）
 - [ ] `TasksController` GET `/api/tasks?status=active|archived`（200: `Task[]`）
 - [ ] `TasksController` POST `/api/tasks`（201: `Task` / 400）
