@@ -31,11 +31,11 @@
 ## DTO / Controllers（I/O 契約）
 
 - [x] Task DTO 定義（Create/Update/Response）
-- [ ] Session DTO 定義（Create/Complete/Response）
-- [ ] `TasksController` GET `/api/tasks?status=active|archived`（200: `Task[]`）
-- [ ] `TasksController` POST `/api/tasks`（201: `Task` / 400）
-- [ ] `TasksController` PATCH `/api/tasks/{id}`（200 / 404）
-- [ ] `TasksController` DELETE `/api/tasks/{id}`（204 / 404）
+- [x] Session DTO 定義（Create/Complete/Response）
+- [x] `TasksController` GET `/api/tasks?status=active|archived`（200: `Task[]`）
+- [x] `TasksController` POST `/api/tasks`（201: `Task` / 400）
+- [x] `TasksController` PATCH `/api/tasks/{id}`（200 / 404）
+- [x] `TasksController` DELETE `/api/tasks/{id}`（204 / 404）
 - [ ] `SessionsController` POST `/api/sessions`（開始: 201 / 400）
 - [ ] `SessionsController` PATCH `/api/sessions/{id}/complete`（200 / 404 / 409）
 - [ ] `SessionsController` GET `/api/sessions?date=YYYY-MM-DD`（200: `Session[]`）
