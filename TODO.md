@@ -36,13 +36,13 @@
 - [x] `TasksController` POST `/api/tasks`（201: `Task` / 400）
 - [x] `TasksController` PATCH `/api/tasks/{id}`（200 / 404）
 - [x] `TasksController` DELETE `/api/tasks/{id}`（204 / 404）
-- [ ] `SessionsController` POST `/api/sessions`（開始: 201 / 400）
-- [ ] `SessionsController` PATCH `/api/sessions/{id}/complete`（200 / 404 / 409）
-- [ ] `SessionsController` GET `/api/sessions?date=YYYY-MM-DD`（200: `Session[]`）
-- [ ] `SummaryController` GET `/api/summary?from&to`（200: 指定期間集計）
-- [ ] `DailySummary` 計算ロジック実装（Session から動的集計）
-- [ ] すべてのアクションに `[ProducesResponseType]`（200/201/400/404/409）を付与
-- [ ] ModelState 無効時 400（自動検証）の挙動確認
+- [x] `SessionsController` POST `/api/sessions`（開始: 201 / 400）
+- [x] `SessionsController` PATCH `/api/sessions/{id}/complete`（200 / 404 / 409）
+- [x] `SessionsController` GET `/api/sessions?date=YYYY-MM-DD`（200: `Session[]`）
+- [x] `SummaryController` GET `/api/summary?from&to`（200: 指定期間集計）
+- [x] `DailySummary` 計算ロジック実装（Session から動的集計）
+- [x] すべてのアクションに `[ProducesResponseType]`（200/201/400/404/409）を付与
+
 
 ## テスト
 

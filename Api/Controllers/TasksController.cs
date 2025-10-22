@@ -20,6 +20,8 @@ public class TasksController : ControllerBase
     }
 
     [HttpGet]
+    [ProducesResponseType(typeof(IEnumerable<TaskResponseDto>), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<IEnumerable<TaskResponseDto>>> GetTasks(
         [FromQuery] string? status = null)
     {
@@ -75,6 +77,7 @@ public class TasksController : ControllerBase
     [HttpGet("{id}")]
     [ProducesResponseType(typeof(TaskResponseDto), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<TaskResponseDto>> GetTask(int id)
     {
         var task = await _taskRepository.GetByIdAsync(id);
