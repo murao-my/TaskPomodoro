@@ -47,9 +47,9 @@
 ## テスト
 
 - [x] xUnitテストプロジェクト作成（Api.Tests）
-- [x] テスト用パッケージ追加（Mvc.Testing, InMemory, Moq, FluentAssertions）
+- [x] テスト用パッケージ追加（Mvc.Testing, SQLite, Moq, FluentAssertions）
 - [x] テストディレクトリ構造作成（Controllers/Data/Integration/Helpers/Fixtures/Mocks/TestData/Utils）
-- [ ] 統合テスト用に InMemory/別 SQLite へ切替可能な構成を用意
+- [ ] 統合テスト用に SQLite テストデータベース構成を用意
 - [ ] Controller ユニットテスト（Tasks/Sessions/Summary）
 - [ ] Repository/UnitOfWork ユニットテスト
 - [ ] 検証/例外のテスト（ProblemDetails 変換含む）

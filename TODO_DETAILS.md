@@ -203,7 +203,7 @@
 **必要性**: テストに必要な機能（統合テスト、モック、アサーション）を提供するため
 **説明**: 以下のパッケージを追加：
 - `Microsoft.AspNetCore.Mvc.Testing`: 統合テスト用
-- `Microsoft.EntityFrameworkCore.InMemory`: テスト用データベース
+- `Microsoft.EntityFrameworkCore.Sqlite`: テスト用SQLiteデータベース
 - `Moq`: モック作成
 - `FluentAssertions`: 読みやすいアサーション
 **用語**:
@@ -225,13 +225,14 @@
 - **ディレクトリ構造**: ファイルの整理方法
 - **保守性**: コードの修正・拡張のしやすさ
 
-### 統合テスト用DB切替構成
+### 統合テスト用SQLiteデータベース構成
 **必要性**: テスト実行時に本番データを汚染しないため
-**説明**: テスト専用のInMemoryデータベースまたは別のSQLiteファイルに切り替え可能な構成を用意。`WebApplicationFactory`を使用してテスト環境を構築
+**説明**: テスト専用のSQLiteファイル（例：`test.db`）を使用する構成を用意。`WebApplicationFactory`を使用してテスト環境を構築し、テスト用の接続文字列を設定
 **用語**:
 - **統合テスト**: 複数のコンポーネントを組み合わせてテストすること
 - **テストデータベース**: テスト専用に用意されたデータベース
 - **WebApplicationFactory**: ASP.NET Coreの統合テスト用ファクトリ
+- **SQLite**: 軽量なファイルベースのリレーショナルデータベース
 
 ### Controller ユニットテスト
 **必要性**: 各コントローラの動作を個別に検証するため
