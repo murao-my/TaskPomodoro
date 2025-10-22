@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using TaskPomodoro.Api.Data;
 
-namespace TaskPomodoro.Api.Repositories;
+namespace TaskPomodoro.Api.Data;
 
 /// <summary>
 /// A repository implementation using Entity Framework Core

@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace TaskPomodoro.Api.Repositories;
+namespace TaskPomodoro.Api.Data;
 
 public interface IRepository<T> where T : class
 {

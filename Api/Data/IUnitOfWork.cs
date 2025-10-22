@@ -1,4 +1,4 @@
-namespace TaskPomodoro.Api.Repositories;
+namespace TaskPomodoro.Api.Data;
 
 public interface IUnitOfWork
 {

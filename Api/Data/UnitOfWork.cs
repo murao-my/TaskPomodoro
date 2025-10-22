@@ -1,5 +1,6 @@
-namespace TaskPomodoro.Api.Repositories;
 using TaskPomodoro.Api.Data;
+
+namespace TaskPomodoro.Api.Data;
 
 public class UnitOfWork : IUnitOfWork
 {

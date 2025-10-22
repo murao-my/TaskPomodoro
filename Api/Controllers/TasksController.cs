@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TaskPomodoro.Api.DTOs;
 using TaskPomodoro.Api.Models;
-using TaskPomodoro.Api.Repositories;
+using TaskPomodoro.Api.Data;
 
 namespace TaskPomodoro.Api.Controllers;
 
