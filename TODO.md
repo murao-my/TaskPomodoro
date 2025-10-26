@@ -23,10 +23,10 @@
 - [ ] ProblemDetails 応答の確認・整形（.NET 8 既定 + 必要な拡張）
 - [ ] 例外フィルタ作成（ドメイン例外→ProblemDetails 変換）
 - [ ] アクションフィルタ作成（監査: user/route/elapsed）
-- [ ] CORS を開発用に許可（web からのアクセス）
+- [x] CORS を開発用に許可（web からのアクセス）
 - [ ] Rate Limiting の最小構成を Program.cs に設定
 - [ ] API バージョニング設定（パッケージ導入済み前提の構成）
-- [ ] Swagger UI/スキーマの有効化と最小設定（パッケージ導入済み前提）
+- [x] Swagger UI/スキーマの有効化と最小設定（パッケージ導入済み前提）
 
 ## DTO / Controllers（I/O 契約）
 
@@ -49,13 +49,15 @@
 - [x] xUnitテストプロジェクト作成（Api.Tests）
 - [x] テスト用パッケージ追加（Mvc.Testing, SQLite, Moq, FluentAssertions）
 - [x] テストディレクトリ構造作成（Controllers/Data/Integration/Helpers/Fixtures/Mocks/TestData/Utils）
-- [ ] 統合テスト用に SQLite テストデータベース構成を用意
-- [ ] Controller ユニットテスト（Tasks/Sessions/Summary）
-- [ ] Repository/UnitOfWork ユニットテスト
+- [x] テスト用 appsettings.json 作成（SQLite 接続・ログ抑制）
+- [x] xunit.runner.json 作成（並列実行/出力形式の制御）
+- [x] 統合テスト用に SQLite テストデータベース構成を用意
+- [x] Controller ユニットテスト（Tasks/Sessions/Summary）
+- [x] Repository/UnitOfWork ユニットテスト
 - [ ] 検証/例外のテスト（ProblemDetails 変換含む）
-- [ ] テストデータビルダー実装（TestDataBuilder）
-- [ ] テストフィクスチャ実装（DatabaseFixture, WebApplicationFixture）
-- [ ] モックファクトリ実装（MockRepositoryFactory）
+- [x] テストデータビルダー実装（TestDataBuilder）
+- [x] テストフィクスチャ実装（DatabaseFixture - SQLite対応済み）
+- [x] テストディレクトリ構造（Integration/ ディレクトリ追加）
 
 ## Web（React + Vite + TypeScript）
 
