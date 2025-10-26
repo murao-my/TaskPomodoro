@@ -61,17 +61,43 @@
 
 ## Web（React + Vite + TypeScript）
 
-- [ ] `lib/api` 実装（tasks/sessions/summary の fetch ラッパ）
-- [ ] `lib/time` 実装（ms↔mm:ss、`ceil` 補正）
-- [ ] `components/TaskList`（検索/選択/アーカイブ切替）
-- [ ] `components/Timer`（状態遷移/残り時間/開始/一時停止/再開/スキップ）
-- [ ] `components/SummaryCard`（本日の成果表示）
-- [ ] `pages/Dashboard`（2 カラムレイアウト）
-- [ ] タイマー状態管理（Idle/FocusRunning/FocusPaused/BreakRunning/BreakPaused）
-- [ ] セッション開始時の暫定保存、完了/スキップ時の確定保存ロジック
-- [ ] レスポンシブ最小対応（縦優先、主要ブレークポイント）
-- [ ] `VITE_API_BASE` を用いた API ベース URL 利用
-- [ ] 開発用のエラーハンドリング・トースト通知（任意）
+### Phase 1: プロジェクトセットアップ（完了済み）
+- [x] Vite + React + TypeScript プロジェクト作成
+- [x] Tamagui Design System インストール（UI コンポーネントライブラリ）
+- [x] 環境変数 `.env` 作成（`VITE_API_BASE=http://localhost:5121`）
+- [x] ディレクトリ構造整備（`src/lib/`, `src/components/`, `src/pages/`, `src/hooks/`）
+
+### Phase 2: 基盤実装（最優先 - API接続）
+- [ ] `lib/api/client.ts` - API クライアント基盤（fetch ラッパ、エラーハンドリング）
+- [ ] `lib/api/tasks.ts` - Tasks API クライアント（GET/POST/PATCH/DELETE）
+- [ ] `lib/api/sessions.ts` - Sessions API クライアント（POST/PATCH/GET）
+- [ ] `lib/api/summary.ts` - Summary API クライアント（GET）
+- [ ] `lib/time.ts` - 時間ユーティリティ（ms↔mm:ss、ceil 補正）
+
+### Phase 3: 状態管理（コア機能）
+- [ ] `hooks/useTimerState.ts` - タイマー状態管理フック
+  - 状態定義（Idle/FocusRunning/FocusPaused/BreakRunning/BreakPaused）
+  - 状態遷移ロジック
+  - 残り時間カウントダウン
+- [ ] `hooks/useSession.ts` - セッション管理フック
+  - セッション開始時の暫定保存
+  - 完了/スキップ時の確定保存ロジック
+
+### Phase 4: UI コンポーネント
+- [ ] `components/TaskList.tsx` - タスク一覧コンポーネント
+  - 検索機能
+  - タスク選択
+  - アーカイブ切替
+- [ ] `components/Timer.tsx` - タイマーコンポーネント
+  - 残り時間表示
+  - 開始/一時停止/再開/スキップボタン
+- [ ] `components/SummaryCard.tsx` - 本日の成果カード
+
+### Phase 5: ページ統合
+- [ ] `pages/Dashboard.tsx` - ダッシュボードページ
+  - 2 カラムレイアウト（TaskList + Timer）
+  - レスポンシブ対応（縦優先）
+  - 各コンポーネントの統合
 
 ## アクセシビリティ / 品質
 
