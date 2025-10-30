@@ -68,11 +68,12 @@
 - [x] ディレクトリ構造整備（`src/lib/`, `src/components/`, `src/pages/`, `src/hooks/`）
 
 ### Phase 2: 基盤実装（最優先 - API接続）
-- [ ] `lib/api/client.ts` - API クライアント基盤（fetch ラッパ、エラーハンドリング）
-- [ ] `lib/api/tasks.ts` - Tasks API クライアント（GET/POST/PATCH/DELETE）
-- [ ] `lib/api/sessions.ts` - Sessions API クライアント（POST/PATCH/GET）
-- [ ] `lib/api/summary.ts` - Summary API クライアント（GET）
-- [ ] `lib/time.ts` - 時間ユーティリティ（ms↔mm:ss、ceil 補正）
+- [x] `lib/api/client.ts` - API クライアント基盤（fetch ラッパ、エラーハンドリング）
+- [x] `types/api.ts` - API 型定義（DTO/Enum）
+- [x] `lib/api/tasks.ts` - Tasks API クライアント（GET/POST/PATCH/DELETE）
+- [x] `lib/api/sessions.ts` - Sessions API クライアント（POST/PATCH/GET）
+- [x] `lib/api/summary.ts` - Summary API クライアント（GET）
+- [x] `lib/time.ts` - 時間ユーティリティ（ms↔mm:ss、ceil 補正）
 
 ### Phase 3: 状態管理（コア機能）
 - [ ] `hooks/useTimerState.ts` - タイマー状態管理フック
